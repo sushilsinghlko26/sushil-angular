@@ -1,0 +1,30 @@
+<h2> List of Skills</h2>
+<!-- <div>
+  This content should be viewed by Admin
+</div> -->
+<!-- <div>
+    This content should be viewed by loggedIn users
+</div> -->
+<hr />
+<!-- <button class="btn btn-primary">Button Test</button> -->
+<button class="btn btn-primary" (click)="getJsonData()">get data</button>
+<hr />
+<!-- <h4>Name - UserName - Latitude</h4> -->
+<table class="table" *ngIf = "skills">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">UserName</th>
+        <th scope="col">Latitude</th>
+      </tr>
+    </thead>
+        <tbody>
+          <tr *ngFor="let mySkills of skills">
+            <td>{{mySkills.name}}</td>
+            <td>{{mySkills.username}}</td>
+            <td>{{mySkills.address.geo.lat}}</td>
+          </tr>
+        </tbody>
+</table>
+  <!-- <div>{{mySkills.name}} - {{mySkills.username}} - {{mySkills.address.geo.lat}}</div> -->
+

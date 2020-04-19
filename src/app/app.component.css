@@ -1,0 +1,9 @@
+header{
+    display: block;
+    width: 100%;
+    clear: both;
+    min-height: 40px;
+}
+.main {
+    padding: 30px 20px;
+}
